@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tony.habilitacion.MainActivity">
+
+    <Button
+        android:id="@+id/buttonCobroExpress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.77"
+        android:text="COBRO EXPRESS" />
+
+    <Button
+        android:id="@+id/buttonRapiPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.77"
+        android:text="RAPIPAGO" />
+
+    <Button
+        android:id="@+id/buttonPagoFacil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.70"
+        android:text="PAGO FACIL" />
+</LinearLayout>
