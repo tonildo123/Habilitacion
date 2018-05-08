@@ -2,29 +2,130 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.tony.habilitacion.MainActivity">
 
-    <Button
-        android:id="@+id/buttonCobroExpress"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.77"
-        android:text="COBRO EXPRESS" />
+        android:layout_height="match_parent"
+        android:layout_weight="0.10"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/buttonRapiPago"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.77"
-        android:text="RAPIPAGO" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/buttonPagoFacil"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    app:srcCompat="@drawable/cobroexpr" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    app:srcCompat="@drawable/pagofafa" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    app:srcCompat="@drawable/rapipa" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mapaCobro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:text="VER COBRO EXPRESS" />
+
+                <Button
+                    android:id="@+id/listaCobro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:text="LISTA DE COBROEXPRESS" />
+
+                <Button
+                    android:id="@+id/mapaPagoFacil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:text="VER PAGO FACIL" />
+
+                <Button
+                    android:id="@+id/listadoPagoFacil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:text="LISTA DE PAGO FACIL" />
+
+                <Button
+                    android:id="@+id/mapaRapipagp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:text="VER RAPIPAGO" />
+
+                <Button
+                    android:id="@+id/listaRapipago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:text="LISTA DE RAPIPAGOS" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.70"
-        android:text="PAGO FACIL" />
+        android:layout_height="match_parent"
+        android:layout_weight="0.90"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:text="HABILTACION PROFESIONAL 2018"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UTN-FRT"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18sp" />
+    </LinearLayout>
+
 </LinearLayout>
